@@ -40,30 +40,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
       </a>
 
-      <p>
-      Questo è il mio sito web di microblogging 
-      </p>
-      <p>
-        Leggi i miei post oppure il
-        <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> per altre informazioni.
-      </p>
-      <p role="presentation" aria-label="">
-      ---
-      </p>
-      <p>
-      P.S. sto assumendo per conto dell'azienda per cui lavoro. 
-      Se ti piacerebbe lavorare nel campo dello sviluppo software contattami! :)
-      </p>
+      <p>My microblogging website.</p>
+      <!-- <p role="presentation" aria-label="">---</p> -->
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">I miei links social:</div>
+            <div class="social-links">Social links:</div>
             <Socials />
           </div>
         )
@@ -76,7 +59,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>In primo piano</h2>
+            <h2>Featured</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -93,7 +76,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <section id="recent-posts">
-      <h2>Post recenti</h2>
+      <h2>Recent posts</h2>
       <ul>
         {
           sortedPosts
