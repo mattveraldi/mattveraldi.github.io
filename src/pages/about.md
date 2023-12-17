@@ -3,6 +3,10 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
+I kept the original about section here because I want to give credit to the amazing developers who created this theme for Astro, completely free to use!
+
+---
+
 AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
 
 This theme is aimed to be accessible out of the box. Light and dark mode are supported by
