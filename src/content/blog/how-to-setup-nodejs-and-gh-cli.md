@@ -8,6 +8,8 @@ featured: true
 tags: ["nodejs", "nvm", "cli", "howto"]
 ---
 
+If you'd like to see the video version [Click here](https://bit.ly/mattveraldi-setup-nodejs-yt).
+
 I had to re-install my WSL2 Ubuntu distro for Web Development, so I decided to document how I setup things starting from NodeJS.
 These steps are meant to be executed on a Debian based Linux distribution, but they are valid also for Mac OSX.
 
