@@ -27,7 +27,7 @@ I tried a very simple vim setup on my WSL2 with Debian, and I have to say that I
 
 ## vim-setup
 
-I created a repository called `vim-setup` that contains two files:
+I created a repository called [`vim-setup`](https://github.com/mattveraldi/vim-setup) that contains two files:
 
 1. setup-vim.sh
 2. .vimrc
@@ -36,9 +36,9 @@ In the `.vimrc` there is my full configuration for vim, and in `setup-vim.sh` th
 
 ### Who should use it?
 
-If you are new to vim and you use Python as your main language, this is for you.
-If your project is mostly written in Python, this is for you.
-If you are working with Frameworks like Django or Flask, you could use this as a starting point, but then you'll surely need to add some plugins to work with different type of files depending on the project's nature and size.
+- If you are new to vim and you use Python as your main language, this is for you.
+- If your project is mostly written in Python, this is for you.
+  If you are working with Frameworks like Django or Flask, you could use this as a starting point, but then you'll surely need to add some plugins to work with different type of files depending on the project's nature and size.
 
 P.S. If you are NOT running Linux as your OS, you will need to manually perform the operations that are automated for bash in the `setup-vim.sh` file
 
@@ -48,6 +48,18 @@ Replace `vim` with `vim-nox` (optional):
 
 ```bash
 sudo apt remove vim && sudo apt install vim-nox
+```
+
+Clone my project using `git`
+
+```bash
+git clone https://github.com/mattveraldi/vim-setup.git
+```
+
+or Download it using `wget`
+
+```bash
+wget https://github.com/mattveraldi/vim-setup/archive/master.tar.gz
 ```
 
 Install my configuration:
