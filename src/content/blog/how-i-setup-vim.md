@@ -59,7 +59,7 @@ git clone https://github.com/mattveraldi/vim-setup.git
 or Download it using `wget`
 
 ```bash
-wget https://github.com/mattveraldi/vim-setup/archive/master.tar.gz
+wget https://github.com/mattveraldi/vim-setup/archive/main.tar.gz
 ```
 
 Install my configuration:
