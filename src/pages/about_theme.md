@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "About the theme"
 ---
 
 I kept the original about section here because I want to give credit to the amazing developers who created this theme for Astro, completely free to use!
