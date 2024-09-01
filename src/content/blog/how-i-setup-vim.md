@@ -8,6 +8,13 @@ featured: true
 tags: ["bash", "wsl", "linux", "vim", "python", "howto"]
 ---
 
+> Before you read:
+>
+> This is not how i setup vim anymore, on my current setup I have LazyVim with some custom configurations.
+> If you are interested you can find my [config files here](https://github.com/mattveraldi/dotfiles).
+>
+> This article is still valid if you just want a simple, yet effective, python configuration for vim.
+
 ## Introduction
 
 I am a huge fan of `vim`!
