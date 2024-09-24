@@ -1,15 +1,15 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import LinkButton from "@components/LinkButton.astro";
-import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Hr from "@components/Hr.astro";
+import LinkButton from "@components/LinkButton.astro";
 import Socials from "@components/Socials.astro";
+import { SOCIALS } from "@config";
+import Layout from "@layouts/Layout.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
-import { SOCIALS } from "@config";
+import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
 
@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Microdev</h1>
+      <h1 class="mr-2">Il mio blog</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -40,13 +40,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
       </a>
 
-      <p>My microblogging website.</p>
+      <p>Qui potrai trovare articoli sullo sviluppo web e altro <span role="presentation" aria-label="">:)</span></p>
       <!-- <p role="presentation" aria-label="">---</p> -->
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social links:</div>
+            <div class="social-links">Puoi trovarmi anche qui:</div>
             <Socials />
           </div>
         )
@@ -59,7 +59,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>In evidenza</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -76,7 +76,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <section id="recent-posts">
-      <h2>Recent posts</h2>
+      <h2>Post recenti</h2>
       <ul>
         {
           sortedPosts
@@ -95,7 +95,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </ul>
       <div class="all-posts-btn-wrapper">
         <LinkButton href="/posts">
-          All posts
+          Tutti gli articoli
           <svg xmlns="http://www.w3.org/2000/svg"
             ><path
               d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"

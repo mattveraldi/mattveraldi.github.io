@@ -4,7 +4,8 @@ pubDatetime: 2023-22-12T23:44:00Z
 title: How I setup vim for simple python programming.
 description: This is how I easily setup vim for a better python programming experience.
 slug: how-I-setup-vim
-featured: true
+featured: false
+draft: true
 tags: ["bash", "wsl", "linux", "vim", "python", "howto"]
 ---
 

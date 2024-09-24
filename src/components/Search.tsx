@@ -1,8 +1,8 @@
-import Fuse from "fuse.js";
-import { useEffect, useRef, useState, useMemo } from "react";
 import Card from "@components/Card";
 import slugify from "@utils/slugify";
 import type { CollectionEntry } from "astro:content";
+import Fuse from "fuse.js";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 export type SearchItem = {
   title: string;
@@ -86,7 +86,7 @@ export default function SearchBar({ searchList }: Props) {
         border-opacity-40 bg-skin-fill py-3 pl-10
         pr-3 placeholder:italic placeholder:text-opacity-75 
         focus:border-skin-accent focus:outline-none"
-          placeholder="Search for anything..."
+          placeholder="Cerca qualsiasi cosa..."
           type="text"
           name="search"
           value={inputVal}

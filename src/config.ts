@@ -6,7 +6,7 @@ export const SITE: Site = {
   desc: "My microblogging website",
   title: "Matteo Veraldi",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerPage: 3,
 };
 
