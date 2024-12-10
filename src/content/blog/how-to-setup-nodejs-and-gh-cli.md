@@ -5,6 +5,7 @@ title: How to quickly setup NodeJS
 description: This is how I install and setup NodeJS for multiple projects on my WSL2 using Ubuntu via nvm cli.
 slug: how-to-setup-nodejs
 featured: true
+draft: true
 tags: ["nodejs", "nvm", "cli", "howto"]
 ---
 
